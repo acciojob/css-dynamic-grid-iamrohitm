@@ -1,13 +1,21 @@
-/*  your css code here. If applicable */
-.grid-item{
-	background-color: lightgray;
-	height: 150px;
-	width: 200px;
-	border-radius: 5px;
-	font-size: 40px;
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
-.grid-container{
-	display: flex;
-	flex-wrap: wrap;
+/* Grid items */
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 40px;
+
+  /* Center content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
