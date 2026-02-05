@@ -1,12 +1,10 @@
-/* Grid container */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-gap: 10px;
   justify-items: center;
 }
 
-/* Grid items */
 .grid-item {
   background-color: lightgray;
   height: 150px;
@@ -14,7 +12,6 @@
   border-radius: 5px;
   font-size: 40px;
 
-  /* Center content */
   display: flex;
   align-items: center;
   justify-content: center;
